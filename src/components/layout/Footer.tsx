@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { navItems, socialLinks } from '../../data/content';
 
 export default function Footer() {
   return (
@@ -18,10 +19,11 @@ export default function Footer() {
         <div>
           <h4 className="wf-footer-title">Navegação</h4>
           <ul className="wf-footer-links">
-            <li><Link to="/">Início</Link></li>
-            <li><Link to="/sobre">Sobre</Link></li>
-            <li><Link to="/palestras">Palestras</Link></li>
-            <li><Link to="/contato">Contato</Link></li>
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <Link to={item.path}>{item.label}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -51,11 +53,11 @@ export default function Footer() {
       <div className="wf-footer-bottom">
         <p className="wf-footer-copy">© 2025 Fernando Gonçalves. Todos os direitos reservados. | www.fernandosimplex.com.br</p>
         <div className="wf-footer-social">
-          <div className="wf-footer-social-item" title="Instagram">IG</div>
-          <div className="wf-footer-social-item" title="YouTube">YT</div>
-          <div className="wf-footer-social-item" title="LinkedIn">IN</div>
-          <div className="wf-footer-social-item" title="Facebook">FB</div>
-          <div className="wf-footer-social-item" title="TikTok">TT</div>
+          {socialLinks.map((link) => (
+            <div key={link.platform} className="wf-footer-social-item" title={link.platform}>
+              {link.platform.substring(0, 2).toUpperCase()}
+            </div>
+          ))}
         </div>
       </div>
     </footer>

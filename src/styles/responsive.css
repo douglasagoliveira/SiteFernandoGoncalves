@@ -1,0 +1,141 @@
+/* ============================================
+   RESPONSIVE - Media queries
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .wf-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .wf-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .wf-hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  .wf-hero-content,
+  .wf-hero-image {
+    max-width: 100%;
+  }
+  
+  .wf-hero-title {
+    font-size: 32px;
+  }
+  
+  .wf-grid-3,
+  .wf-grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .wf-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .wf-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .wf-footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .wf-contact-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .wf-palestra-item {
+    grid-template-columns: 1fr;
+  }
+  
+  .wf-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .wf-header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .wf-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .wf-section {
+    padding: 60px 20px;
+  }
+  
+  .wf-section-title {
+    font-size: 28px;
+  }
+  
+  .wf-page-header {
+    padding: 60px 20px;
+  }
+  
+  .wf-page-header-title {
+    font-size: 32px;
+  }
+  
+  .wf-footer {
+    padding: 40px 20px 20px;
+  }
+  
+  .wf-footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .wf-breadcrumb {
+    padding: 16px 20px;
+  }
+  
+  .wf-cta-section {
+    padding: 60px 20px;
+  }
+  
+  .wf-cta-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wf-hero-title {
+    font-size: 28px;
+  }
+  
+  .wf-hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .wf-hero-buttons {
+    flex-direction: column;
+  }
+  
+  .wf-btn-primary,
+  .wf-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .wf-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .wf-section-title {
+    font-size: 24px;
+  }
+  
+  .wf-page-header-title {
+    font-size: 28px;
+  }
+}

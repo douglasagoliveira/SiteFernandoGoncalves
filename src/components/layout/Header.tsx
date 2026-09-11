@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { navItems } from '../../data/content';
 
 export default function Header() {
   const location = useLocation();
@@ -10,10 +11,11 @@ export default function Header() {
         LOGO
       </div>
       <nav className="wf-nav">
-        <Link to="/" className={`wf-nav-link ${isActive('/')}`}>Início</Link>
-        <Link to="/sobre" className={`wf-nav-link ${isActive('/sobre')}`}>Sobre</Link>
-        <Link to="/palestras" className={`wf-nav-link ${isActive('/palestras')}`}>Palestras</Link>
-        <Link to="/contato" className={`wf-nav-link ${isActive('/contato')}`}>Contato</Link>
+        {navItems.map((item) => (
+          <Link key={item.path} to={item.path} className={`wf-nav-link ${isActive(item.path)}`}>
+            {item.label}
+          </Link>
+        ))}
         <Link to="/contato" className="wf-nav-cta">Solicite Uma Palestra</Link>
       </nav>
     </header>

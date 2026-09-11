@@ -1,12 +1,11 @@
+import Breadcrumb from '../components/layout/Breadcrumb';
+import { Button, Section } from '../components/ui';
+import { contactInfo, socialLinks, contactForm, contactCta, faqItems } from '../data/content';
+
 export default function Contato() {
   return (
     <div>
-      {/* BREADCRUMB */}
-      <div className="wf-breadcrumb">
-        <a href="#/">Início</a>
-        <span>/</span>
-        Contato
-      </div>
+      <Breadcrumb currentPage="Contato" />
 
       {/* PAGE HEADER */}
       <section className="wf-page-header">
@@ -17,15 +16,15 @@ export default function Contato() {
         </p>
       </section>
 
-      {/* FORMULÁRIO + INFO DE CONTATO */}
-      <section className="wf-section">
+      {/* FORMULÁRIO + INFO */}
+      <Section>
         <div className="wf-contact-layout">
           {/* COLUNA ESQUERDA — Formulário */}
           <div>
-            <p className="wf-section-label">Solicite uma Proposta</p>
-            <h2 className="wf-section-title" style={{ fontSize: '28px' }}>Preencha os dados abaixo</h2>
+            <p className="wf-section-label">{contactForm.sectionLabel}</p>
+            <h2 className="wf-section-title" style={{ fontSize: '28px' }}>{contactForm.title}</h2>
             <p className="wf-section-subtitle" style={{ marginBottom: '32px' }}>
-              Informe os dados do evento e nossa equipe entrará em contato para apresentar a melhor proposta.
+              {contactForm.subtitle}
             </p>
 
             <form className="wf-form">
@@ -105,47 +104,32 @@ export default function Contato() {
 
               <div style={{ marginTop: '32px' }}>
                 <button type="button" className="wf-btn-primary">
-                  Solicitar Proposta
+                  {contactForm.submitButton}
                 </button>
               </div>
             </form>
           </div>
 
-          {/* COLUNA DIREITA — Informações de Contato */}
+          {/* COLUNA DIREITA — Informações */}
           <div>
             <p className="wf-section-label">Informações</p>
             <h2 className="wf-section-title" style={{ fontSize: '28px' }}>Fale diretamente</h2>
 
             <div style={{ marginTop: '32px' }}>
-              {/* WhatsApp */}
-              <div className="wf-contact-info-item">
-                <div className="wf-contact-icon">📱</div>
-                <div>
-                  <p className="wf-contact-info-label">WhatsApp</p>
-                  <p className="wf-contact-info-value">(31) 99847-5453</p>
+              {contactInfo.map((info, index) => (
+                <div key={index} className="wf-contact-info-item">
+                  <div className="wf-contact-icon">{info.icon}</div>
+                  <div>
+                    <p className="wf-contact-info-label">{info.label}</p>
+                    <p className="wf-contact-info-value">{info.value}</p>
+                    {info.details && info.details.map((detail, i) => (
+                      <p key={i} style={{ fontSize: '13px', color: '#888', marginTop: '4px' }}>
+                        {detail}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-              </div>
-
-              {/* Email */}
-              <div className="wf-contact-info-item">
-                <div className="wf-contact-icon">@</div>
-                <div>
-                  <p className="wf-contact-info-label">E-mail</p>
-                  <p className="wf-contact-info-value">contato@fernandosimplex.com.br</p>
-                </div>
-              </div>
-
-              {/* Localização */}
-              <div className="wf-contact-info-item">
-                <div className="wf-contact-icon">LOC</div>
-                <div>
-                  <p className="wf-contact-info-label">Localização</p>
-                  <p className="wf-contact-info-value">Belo Horizonte, MG — Brasil</p>
-                  <p style={{ fontSize: '13px', color: '#888', marginTop: '4px' }}>
-                    Atendemos eventos em todo o Brasil.
-                  </p>
-                </div>
-              </div>
+              ))}
 
               {/* Redes Sociais */}
               <div className="wf-contact-info-item">
@@ -153,10 +137,11 @@ export default function Contato() {
                 <div>
                   <p className="wf-contact-info-label">Redes Sociais</p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '8px' }}>
-                    <div style={{ fontSize: '13px', color: '#555' }}>Instagram: @fernandosimplex</div>
-                    <div style={{ fontSize: '13px', color: '#555' }}>Facebook: Fernando Simplex</div>
-                    <div style={{ fontSize: '13px', color: '#555' }}>TikTok: @fernandosimplex</div>
-                    <div style={{ fontSize: '13px', color: '#555' }}>YouTube: @FernandoSimplexCanal</div>
+                    {socialLinks.map((link, index) => (
+                      <div key={index} style={{ fontSize: '13px', color: '#555' }}>
+                        {link.platform}: {link.handle}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -165,61 +150,39 @@ export default function Contato() {
             {/* Divider */}
             <div className="wf-divider" style={{ margin: '40px 0' }}></div>
 
-            {/* FAQ Rápido */}
+            {/* FAQ */}
             <div>
               <h3 style={{ fontSize: '18px', fontWeight: 600, color: '#333', marginBottom: '20px' }}>
                 Perguntas Frequentes
               </h3>
 
-              <div style={{ marginBottom: '20px', borderBottom: '1px solid #e0e0e0', paddingBottom: '16px' }}>
-                <p style={{ fontSize: '14px', fontWeight: 600, color: '#333', marginBottom: '8px' }}>
-                  Qual o formato ideal para minha empresa?
-                </p>
-                <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Os formatos podem ser personalizados conforme os objetivos e necessidades do contratante: Palestra Essencial (a partir de 2h), Palestra Ampliada (3 a 4h) ou Experiência Completa (até 6h, divididas em duas ou três etapas).
-                </p>
-              </div>
-
-              <div style={{ marginBottom: '20px', borderBottom: '1px solid #e0e0e0', paddingBottom: '16px' }}>
-                <p style={{ fontSize: '14px', fontWeight: 600, color: '#333', marginBottom: '8px' }}>
-                  É possível personalizar o conteúdo?
-                </p>
-                <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Sim. Através da metodologia SIMPLEX, o conteúdo é estruturado de acordo com o perfil da organização, perfil da equipe, objetivos da contratação, características do público, tempo disponível e conteúdos prioritários.
-                </p>
-              </div>
-
-              <div style={{ marginBottom: '20px', borderBottom: '1px solid #e0e0e0', paddingBottom: '16px' }}>
-                <p style={{ fontSize: '14px', fontWeight: 600, color: '#333', marginBottom: '8px' }}>
-                  Para quais tipos de empresa as palestras são indicadas?
-                </p>
-                <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Indústria, comércio, serviços, equipes de vendas, terceiro setor, instituições religiosas, eventos corporativos, congressos, convenções e grupos familiares.
-                </p>
-              </div>
-
-              <div style={{ paddingBottom: '16px' }}>
-                <p style={{ fontSize: '14px', fontWeight: 600, color: '#333', marginBottom: '8px' }}>
-                  Qual o diferencial das palestras?
-                </p>
-                <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  A principal ferramenta é a própria experiência de vida do palestrante, com mais de 30 anos de atuação. A abordagem parte da identificação, gera reflexão e estimula atitudes concretas de mudança.
-                </p>
-              </div>
+              {faqItems.slice(0, 4).map((item, index) => (
+                <div key={index} style={{ marginBottom: '20px', borderBottom: '1px solid #e0e0e0', paddingBottom: '16px' }}>
+                  <p style={{ fontSize: '14px', fontWeight: 600, color: '#333', marginBottom: '8px' }}>
+                    {item.question}
+                  </p>
+                  <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA FINAL */}
       <section className="wf-cta-section">
-        <h2 className="wf-cta-title">Pronto para transformar sua equipe?</h2>
-        <p className="wf-cta-text">
-          Uma apresentação que combina: História + emoção + reflexão + interação + atitude.
-        </p>
-        <a href="https://wa.me/5531998475453" className="wf-btn-primary" target="_blank" rel="noopener noreferrer">
-          Falar pelo WhatsApp
-        </a>
+        <h2 className="wf-cta-title">{contactCta.title}</h2>
+        <p className="wf-cta-text">{contactCta.description}</p>
+        <Button 
+          href={contactCta.whatsappUrl} 
+          variant="primary" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          {contactCta.buttonText}
+        </Button>
       </section>
     </div>
   );
