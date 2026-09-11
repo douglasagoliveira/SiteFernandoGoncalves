@@ -17,9 +17,7 @@ export default function Contato() {
         </p>
       </section>
 
-      {/* ============================================
-          FORMULÁRIO + INFO DE CONTATO
-          ============================================ */}
+      {/* FORMULÁRIO + INFO DE CONTATO */}
       <section className="wf-section">
         <div className="wf-contact-layout">
           {/* COLUNA ESQUERDA — Formulário */}
@@ -154,11 +152,11 @@ export default function Contato() {
                 <div className="wf-contact-icon">SOC</div>
                 <div>
                   <p className="wf-contact-info-label">Redes Sociais</p>
-                  <div style={{ display: 'flex', gap: '12px', marginTop: '8px', flexWrap: 'wrap' }}>
-                    <div style={{ fontSize: '13px', color: '#555', marginBottom: '6px' }}>Instagram: @fernandosimplex</div>
-                    <div style={{ fontSize: '13px', color: '#555', marginBottom: '6px' }}>Facebook: Fernando Simplex</div>
-                    <div style={{ fontSize: '13px', color: '#555', marginBottom: '6px' }}>TikTok: @fernandosimplex</div>
-                    <div style={{ fontSize: '13px', color: '#555', marginBottom: '6px' }}>YouTube: @FernandoSimplexCanal</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '8px' }}>
+                    <div style={{ fontSize: '13px', color: '#555' }}>Instagram: @fernandosimplex</div>
+                    <div style={{ fontSize: '13px', color: '#555' }}>Facebook: Fernando Simplex</div>
+                    <div style={{ fontSize: '13px', color: '#555' }}>TikTok: @fernandosimplex</div>
+                    <div style={{ fontSize: '13px', color: '#555' }}>YouTube: @FernandoSimplexCanal</div>
                   </div>
                 </div>
               </div>
@@ -178,7 +176,7 @@ export default function Contato() {
                   Qual o formato ideal para minha empresa?
                 </p>
                 <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Os formatos podem ser personalizados conforme os objetivos e necessidades do contratante: Palestra Essencial (a partir de 2h), Palestra Ampliada (3 a 4h) ou Experiência Completa (até 6h).
+                  Os formatos podem ser personalizados conforme os objetivos e necessidades do contratante: Palestra Essencial (a partir de 2h), Palestra Ampliada (3 a 4h) ou Experiência Completa (até 6h, divididas em duas ou três etapas).
                 </p>
               </div>
 
@@ -187,7 +185,7 @@ export default function Contato() {
                   É possível personalizar o conteúdo?
                 </p>
                 <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Sim. Através da metodologia SIMPLEX, o conteúdo é estruturado de acordo com o perfil da organização, perfil da equipe, objetivos da contratação e conteúdos prioritários.
+                  Sim. Através da metodologia SIMPLEX, o conteúdo é estruturado de acordo com o perfil da organização, perfil da equipe, objetivos da contratação, características do público, tempo disponível e conteúdos prioritários.
                 </p>
               </div>
 
@@ -196,7 +194,7 @@ export default function Contato() {
                   Para quais tipos de empresa as palestras são indicadas?
                 </p>
                 <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Indústria, comércio, serviços, equipes de vendas, terceiro setor, instituições religiosas, eventos corporativos, congressos e convenções.
+                  Indústria, comércio, serviços, equipes de vendas, terceiro setor, instituições religiosas, eventos corporativos, congressos, convenções e grupos familiares.
                 </p>
               </div>
 
@@ -205,7 +203,7 @@ export default function Contato() {
                   Qual o diferencial das palestras?
                 </p>
                 <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-              A principal ferramenta é a própria experiência de vida do palestrante, com mais de 30 anos de atuação. A abordagem parte da identificação, gera reflexão e estimula atitudes concretas de mudança.
+                  A principal ferramenta é a própria experiência de vida do palestrante, com mais de 30 anos de atuação. A abordagem parte da identificação, gera reflexão e estimula atitudes concretas de mudança.
                 </p>
               </div>
             </div>
@@ -213,9 +211,7 @@ export default function Contato() {
         </div>
       </section>
 
-      {/* ============================================
-          CTA FINAL
-          ============================================ */}
+      {/* CTA FINAL */}
       <section className="wf-cta-section">
         <h2 className="wf-cta-title">Pronto para transformar sua equipe?</h2>
         <p className="wf-cta-text">

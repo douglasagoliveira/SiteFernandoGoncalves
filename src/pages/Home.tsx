@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div>
-      {/* ============================================
-          HERO SECTION
-          ============================================ */}
+      {/* HERO SECTION */}
       <section className="wf-hero">
         <div className="wf-hero-content">
           <p className="wf-tagline">Storyteller & Palestrante Motivacional</p>
@@ -25,9 +23,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================
-          NÚMEROS / STATS — Autoridade
-          ============================================ */}
+      {/* SOBRE RESUMIDO */}
+      <section className="wf-section">
+        <div className="wf-grid-2" style={{ alignItems: 'center', gap: '64px' }}>
+          <div>
+            <p className="wf-section-label">Quem é Fernando</p>
+            <h2 className="wf-section-title">Uma história real. Uma mensagem que conecta.</h2>
+            <p className="wf-section-subtitle">
+              Sua trajetória é marcada por desafios que poderiam ter determinado um destino completamente diferente. Pobreza, doenças na infância, bullying, violência, dificuldades familiares, limitações educacionais e inúmeras adversidades fizeram parte de sua caminhada.
+            </p>
+            <p className="wf-section-subtitle" style={{ marginTop: '-32px' }}>
+              Mas a história não terminou aí. Fernando decidiu que as circunstâncias não determinariam quem ele seria. Hoje, leva às empresas uma mensagem direta: <strong>"Você não escolhe todas as circunstâncias da vida. Mas pode escolher como irá enfrentá-las."</strong>
+            </p>
+            <Link to="/sobre" className="wf-btn-secondary">Conheça a Trajetória</Link>
+          </div>
+          <div className="wf-card-image" style={{ height: '350px' }}>
+            <span className="wf-annotation">FOTO — Fernando em ação</span>
+          </div>
+        </div>
+      </section>
+
+      {/* NÚMEROS / STATS */}
       <section className="wf-stats">
         <div>
           <p className="wf-stat-number">+30</p>
@@ -47,31 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================
-          SOBRE RESUMIDO — Gerar curiosidade
-          ============================================ */}
-      <section className="wf-section">
-        <div className="wf-grid-2" style={{ alignItems: 'center', gap: '64px' }}>
-          <div>
-            <p className="wf-section-label">Quem é Fernando</p>
-            <h2 className="wf-section-title">Uma história real. Uma mensagem que conecta.</h2>
-            <p className="wf-section-subtitle">
-              Sua trajetória é marcada por desafios que poderiam ter determinado um destino completamente diferente. Pobreza, doenças na infância, bullying, violência e dificuldades familiares fizeram parte de sua caminhada. Mas a história não terminou aí.
-            </p>
-            <p className="wf-section-subtitle" style={{ marginTop: '-32px' }}>
-              Fernando decidiu que as circunstâncias não determinariam quem ele seria. Hoje, leva às empresas uma mensagem direta: <strong>"Você não escolhe todas as circunstâncias da vida. Mas pode escolher como irá enfrentá-las."</strong>
-            </p>
-            <Link to="/sobre" className="wf-btn-secondary">Conheça a Trajetória</Link>
-          </div>
-          <div className="wf-card-image" style={{ height: '350px' }}>
-            <span className="wf-annotation">FOTO — Fernando em ação</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================
-          AS PALESTRAS — 3 Módulos
-          ============================================ */}
+      {/* AS PALESTRAS — 3 Módulos */}
       <section className="wf-section wf-section-dark">
         <div className="wf-section-center">
           <p className="wf-section-label">Palestras</p>
@@ -82,7 +74,6 @@ export default function Home() {
         </div>
 
         <div className="wf-grid-3">
-          {/* Módulo 1 */}
           <div className="wf-card">
             <div className="wf-card-image"></div>
             <span className="wf-palestra-tag">Módulo 1</span>
@@ -93,7 +84,6 @@ export default function Home() {
             <Link to="/palestras" className="wf-card-link">Saiba mais →</Link>
           </div>
 
-          {/* Módulo 2 */}
           <div className="wf-card">
             <div className="wf-card-image"></div>
             <span className="wf-palestra-tag">Módulo 2</span>
@@ -104,7 +94,6 @@ export default function Home() {
             <Link to="/palestras" className="wf-card-link">Saiba mais →</Link>
           </div>
 
-          {/* Módulo 3 */}
           <div className="wf-card">
             <div className="wf-card-image"></div>
             <span className="wf-palestra-tag">Módulo 3</span>
@@ -121,15 +110,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================
-          PARA EMPRESAS — Foco corporativo
-          ============================================ */}
+      {/* PARA EMPRESAS */}
       <section className="wf-section">
         <div className="wf-section-center">
           <p className="wf-section-label">Para Empresas</p>
           <h2 className="wf-section-title">Pessoas motivadas fazem a diferença nos resultados</h2>
           <p className="wf-section-subtitle">
-            Colaboradores mais conscientes de seu papel e mais dispostos a contribuir fortalecem o ambiente de trabalho e favorecem melhores resultados.
+            Colaboradores mais conscientes de seu papel e mais dispostos a contribuir podem fortalecer o ambiente de trabalho e favorecer melhores resultados.
           </p>
         </div>
 
@@ -157,9 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================
-          DEPOIMENTOS
-          ============================================ */}
+      {/* DEPOIMENTOS */}
       <section className="wf-section wf-section-dark">
         <div className="wf-section-center">
           <p className="wf-section-label">Depoimentos</p>
@@ -205,9 +190,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================
-          LIVROS — Prova de autoridade
-          ============================================ */}
+      {/* LIVROS */}
       <section className="wf-section">
         <div className="wf-section-center">
           <p className="wf-section-label">Obras Publicadas</p>
@@ -244,9 +227,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================
-          CTA FINAL
-          ============================================ */}
+      {/* CTA FINAL */}
       <section className="wf-cta-section">
         <h2 className="wf-cta-title">Sua equipe precisa de motivação? Vamos conversar.</h2>
         <p className="wf-cta-text">
