@@ -3,231 +3,277 @@ import { Link } from 'react-router-dom';
 export default function Palestras() {
   return (
     <div>
-      {/* ============================================
-          BREADCRUMB
-          ============================================ */}
+      {/* BREADCRUMB */}
       <div className="wf-breadcrumb">
         <a href="#/">Início</a>
         <span>/</span>
         Palestras
       </div>
 
-      {/* ============================================
-          PAGE HEADER
-          ============================================ */}
+      {/* PAGE HEADER */}
       <section className="wf-page-header">
         <p className="wf-section-label">Palestras</p>
-        <h1 className="wf-page-header-title">[Título: Palestras que transformam equipes e resultados]</h1>
+        <h1 className="wf-page-header-title">Motivação que começa pela identificação</h1>
         <p className="wf-page-header-text">
-          [Subtítulo: Texto curto posicionando as palestras como investimento em desenvolvimento corporativo. 2-3 linhas.]
+          Para tocar as pessoas, é preciso falar com elas — e não apenas para elas. Fernando não se apresenta como alguém que possui uma fórmula mágica. Ele se apresenta como alguém que também enfrentou limitações, dificuldades e circunstâncias adversas.
         </p>
       </section>
 
       {/* ============================================
-          FORMATOS DE PALESTRA — Cards de serviço
-          Objetivo: Mostrar opções de contratação
+          O MÉTODO
+          ============================================ */}
+      <section className="wf-section">
+        <div className="wf-grid-2" style={{ alignItems: 'center', gap: '64px' }}>
+          <div>
+            <p className="wf-section-label">O Método</p>
+            <h2 className="wf-section-title">Conexão, reflexão e atitude</h2>
+            <p className="wf-section-subtitle" style={{ marginBottom: '24px' }}>
+              Essa identificação cria uma conexão natural com os participantes. Durante a palestra, sua história serve como ponto de partida para uma reflexão sobre escolhas, comportamento, relacionamentos, responsabilidade, resiliência e capacidade de mudança.
+            </p>
+            <p className="wf-section-subtitle">
+              O objetivo não é simplesmente emocionar. É provocar reflexão e transformar reflexão em atitude.
+            </p>
+          </div>
+          <div className="wf-card-image" style={{ height: '350px' }}>
+            <span className="wf-annotation">FOTO — Fernando em palestra</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          OS 3 MÓDULOS — Detalhados
+          ============================================ */}
+      <section className="wf-section wf-section-dark">
+        <div className="wf-section-center">
+          <p className="wf-section-label">Estrutura</p>
+          <h2 className="wf-section-title">Uma experiência dividida em três momentos</h2>
+          <p className="wf-section-subtitle">
+            As palestras podem ser adaptadas ao perfil, objetivo e disponibilidade de cada contratante.
+          </p>
+        </div>
+
+        {/* Módulo 1 */}
+        <div className="wf-palestra-item">
+          <div className="wf-palestra-image"></div>
+          <div>
+            <span className="wf-palestra-tag">Módulo 1</span>
+            <h3 className="wf-palestra-title">A História</h3>
+            <p className="wf-palestra-desc">
+              Fernando apresenta os principais momentos de sua trajetória. Uma história real de dificuldades, quedas, recomeços e superação. O objetivo é criar identificação com os participantes e demonstrar, por meio de experiências concretas, que adversidades não precisam representar o ponto final de uma trajetória.
+            </p>
+          </div>
+        </div>
+
+        {/* Módulo 2 */}
+        <div className="wf-palestra-item">
+          <div className="wf-palestra-image"></div>
+          <div>
+            <span className="wf-palestra-tag">Módulo 2</span>
+            <h3 className="wf-palestra-title">As Estratégias</h3>
+            <p className="wf-palestra-desc">
+              Depois da história, vem a reflexão: O que foi feito para mudar essa realidade? Fernando apresenta atitudes e estratégias desenvolvidas ao longo de sua vida para enfrentar situações limitantes.
+            </p>
+            <ul className="wf-palestra-topics">
+              <li>Resiliência e Perseverança</li>
+              <li>Autoconhecimento e Responsabilidade pessoal</li>
+              <li>Paciência e Otimismo</li>
+              <li>Capacidade de adaptação e Recomeços</li>
+              <li>Relacionamento interpessoal</li>
+              <li>Mudança de atitudes e Superação de limitações</li>
+            </ul>
+            <p className="wf-palestra-desc" style={{ marginTop: '16px' }}>
+              A proposta é levar os participantes a compreender que pequenas mudanças de comportamento podem produzir transformações significativas na vida pessoal e profissional.
+            </p>
+          </div>
+        </div>
+
+        {/* Módulo 3 */}
+        <div className="wf-palestra-item">
+          <div className="wf-palestra-image"></div>
+          <div>
+            <span className="wf-palestra-tag">Módulo 3</span>
+            <h3 className="wf-palestra-title">Reflexão e Autoconscientização</h3>
+            <p className="wf-palestra-desc">
+              O terceiro momento é construído com a participação direta do público. Os participantes recebem um formulário com perguntas estratégicas que estimulam uma análise individual sobre comportamento e convivência.
+            </p>
+            <ul className="wf-palestra-topics">
+              <li>Posso ser uma pessoa melhor para aqueles que fazem parte da minha vida?</li>
+              <li>Posso contribuir para melhorar os ambientes onde vivo?</li>
+              <li>Se posso melhorar, por que ainda não fiz isso?</li>
+              <li>Quais três atitudes concretas posso tomar para começar essa mudança?</li>
+            </ul>
+            <p className="wf-palestra-desc" style={{ marginTop: '16px' }}>
+              Os participantes são convidados a estabelecer metas e determinar uma data para colocá-las em prática. O propósito é transformar a palestra em um compromisso pessoal com a mudança.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          DINÂMICAS E INTERAÇÃO
           ============================================ */}
       <section className="wf-section">
         <div className="wf-section-center">
-          <p className="wf-section-label">Formatos</p>
-          <h2 className="wf-section-title">Como posso contribuir com sua empresa</h2>
+          <p className="wf-section-label">Interação</p>
+          <h2 className="wf-section-title">Uma palestra para participar, não apenas assistir</h2>
           <p className="wf-section-subtitle">
-            [Texto curto: introdução aos formatos disponíveis.]
+            Durante as apresentações, são utilizadas dinâmicas interativas, momentos de descontração, brincadeiras e sorteios de brindes. Esses recursos ajudam a criar um ambiente mais leve, aproximar o palestrante dos participantes e reduzir as barreiras naturais existentes em apresentações corporativas.
+          </p>
+        </div>
+
+        <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
+          <p style={{ fontSize: '18px', fontStyle: 'italic', color: '#555', lineHeight: '1.8' }}>
+            "Uma mensagem pode ser ouvida. Mas uma experiência pode ser lembrada."
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================
+          SIMPLES — Metodologia
+          ============================================ */}
+      <section className="wf-section wf-section-dark">
+        <div className="wf-grid-2" style={{ alignItems: 'center', gap: '64px' }}>
+          <div className="wf-card-image" style={{ height: '350px' }}>
+            <span className="wf-annotation">LOGO / IMAGEM SIMPLEX</span>
+          </div>
+          <div>
+            <p className="wf-section-label">Metodologia</p>
+            <h2 className="wf-section-title">SIMPLEX — Sistema Motivacional para Performances de Excelência</h2>
+            <p className="wf-section-subtitle" style={{ marginBottom: '24px' }}>
+              Uma palestra não precisa ser igual para todas as empresas. O Simplex é uma metodologia desenvolvida para estruturar a experiência motivacional de acordo com as características e necessidades de cada contratante.
+            </p>
+            <p className="wf-section-subtitle">
+              Do planejamento à avaliação: perfil da organização, perfil da equipe, objetivos da contratação, conteúdos prioritários, formato da apresentação, estratégias de interação e dinâmicas.
+            </p>
+            <p className="wf-section-subtitle" style={{ marginTop: '-32px' }}>
+              <strong>Simplex: motivação com planejamento, propósito e acompanhamento.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          PARA QUEM SÃO AS PALESTRAS
+          ============================================ */}
+      <section className="wf-section">
+        <div className="wf-section-center">
+          <p className="wf-section-label">Público</p>
+          <h2 className="wf-section-title">Diferentes públicos. Uma mesma proposta: despertar pessoas.</h2>
+        </div>
+
+        <div className="wf-grid-3">
+          <div className="wf-card">
+            <h3 className="wf-card-title">Empresas</h3>
+            <p className="wf-card-text">Indústria, comércio e serviços. Colaboradores, gestores, equipes administrativas e operacionais.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Equipes de Vendas</h3>
+            <p className="wf-card-text">Motivação, atitude, perseverança, relacionamento e foco em resultados.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Eventos Corporativos</h3>
+            <p className="wf-card-text">Congressos, convenções, encontros empresariais e eventos motivacionais.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Terceiro Setor</h3>
+            <p className="wf-card-text">ONGs, associações, projetos sociais e instituições.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Instituições Religiosas</h3>
+            <p className="wf-card-text">Igrejas, grupos e ministérios.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Grupos Familiares</h3>
+            <p className="wf-card-text">Encontros, eventos e momentos de reflexão.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          FORMATOS
+          ============================================ */}
+      <section className="wf-section wf-section-dark">
+        <div className="wf-section-center">
+          <p className="wf-section-label">Formatos</p>
+          <h2 className="wf-section-title">Uma palestra adequada à sua realidade</h2>
+          <p className="wf-section-subtitle">
+            Cada contratação pode ser estruturada de acordo com o perfil e a disponibilidade do contratante.
           </p>
         </div>
 
         <div className="wf-grid-3">
-          {/* Formato 1 */}
           <div className="wf-card">
-            <div className="wf-card-icon">ÍCONE</div>
-            <h3 className="wf-card-title">[Palestra / Keynote]</h3>
+            <div className="wf-card-icon">⏱</div>
+            <h3 className="wf-card-title">Palestra Essencial</h3>
             <p className="wf-card-text">
-              [Descrição: duração, formato, público-alvo. 2-3 linhas.]
+              A partir de 2 horas. Formato indicado para eventos, encontros corporativos e grupos que desejam uma experiência motivacional objetiva e dinâmica.
             </p>
-            <ul style={{ marginTop: '12px', paddingLeft: '16px' }}>
-              <li style={{ fontSize: '13px', color: '#666', marginBottom: '6px' }}>[Detalhe: ex. 60-90 min]</li>
-              <li style={{ fontSize: '13px', color: '#666', marginBottom: '6px' }}>[Detalhe: ex. Até 500 pessoas]</li>
-              <li style={{ fontSize: '13px', color: '#666' }}>[Detalhe: ex. Presencial ou online]</li>
-            </ul>
           </div>
-
-          {/* Formato 2 */}
           <div className="wf-card">
-            <div className="wf-card-icon">ÍCONE</div>
-            <h3 className="wf-card-title">[Workshop / Treinamento]</h3>
+            <div className="wf-card-icon">⏱</div>
+            <h3 className="wf-card-title">Palestra Ampliada</h3>
             <p className="wf-card-text">
-              [Descrição: duração, formato, público-alvo. 2-3 linhas.]
+              De 3 a 4 horas. Possibilita aprofundar os conteúdos, ampliar as dinâmicas e desenvolver maior interação com os participantes.
             </p>
-            <ul style={{ marginTop: '12px', paddingLeft: '16px' }}>
-              <li style={{ fontSize: '13px', color: '#666', marginBottom: '6px' }}>[Detalhe: ex. 4h a 16h]</li>
-              <li style={{ fontSize: '13px', color: '#666', marginBottom: '6px' }}>[Detalhe: ex. Até 50 pessoas]</li>
-              <li style={{ fontSize: '13px', color: '#666' }}>[Detalhe: ex. Prático e vivencial]</li>
-            </ul>
           </div>
-
-          {/* Formato 3 */}
           <div className="wf-card">
-            <div className="wf-card-icon">ÍCONE</div>
-            <h3 className="wf-card-title">[Consultoria / Mentoria]</h3>
+            <div className="wf-card-icon">⏱</div>
+            <h3 className="wf-card-title">Experiência Completa</h3>
             <p className="wf-card-text">
-              [Descrição: duração, formato, público-alvo. 2-3 linhas.]
+              Até 6 horas, divididas em duas ou três etapas. Para organizações que desejam uma experiência mais aprofundada, com maior tempo dedicado à reflexão e interação.
             </p>
-            <ul style={{ marginTop: '12px', paddingLeft: '16px' }}>
-              <li style={{ fontSize: '13px', color: '#666', marginBottom: '6px' }}>[Detalhe: ex. Programa personalizado]</li>
-              <li style={{ fontSize: '13px', color: '#666', marginBottom: '6px' }}>[Detalhe: ex. Liderança / Equipes]</li>
-              <li style={{ fontSize: '13px', color: '#666' }}>[Detalhe: ex. Acompanhamento contínuo]</li>
-            </ul>
           </div>
         </div>
       </section>
 
       {/* ============================================
-          DIVISOR
-          ============================================ */}
-      <div className="wf-divider-thick"></div>
-
-      {/* ============================================
-          TEMAS DE PALESTRA — Lista detalhada
-          Objetivo: Mostrar profundidade de conteúdo
+          RESULTADOS ESPERADOS
           ============================================ */}
       <section className="wf-section">
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p className="wf-section-label">Temas</p>
-          <h2 className="wf-section-title">Temas disponíveis</h2>
-          <p className="wf-section-subtitle">
-            [Texto curto: posicionamento sobre personalização de conteúdo.]
+        <div className="wf-section-center">
+          <p className="wf-section-label">Resultados</p>
+          <h2 className="wf-section-title">O que uma experiência motivacional pode despertar?</h2>
+        </div>
+
+        <div className="wf-grid-3">
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Mais Disposição</h3>
+            <p className="wf-card-text">Colaboradores mais envolvidos e dispostos a participar.</p>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Mais Consciência</h3>
+            <p className="wf-card-text">Profissionais estimulados a refletir sobre suas atitudes e responsabilidades.</p>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Mais Motivação</h3>
+            <p className="wf-card-text">Recuperação do entusiasmo e da disposição para enfrentar desafios.</p>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Melhor Relacionamento</h3>
+            <p className="wf-card-text">Reflexão sobre convivência, comunicação e respeito.</p>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Mais Produtividade</h3>
+            <p className="wf-card-text">Pessoas mais conscientes e comprometidas contribuem para um ambiente mais produtivo.</p>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Melhores Resultados</h3>
+            <p className="wf-card-text">Uma equipe mais engajada contribui para o desempenho da organização.</p>
+          </div>
+        </div>
+
+        <div style={{ textAlign: 'center', maxWidth: '700px', margin: '48px auto 0' }}>
+          <p style={{ fontSize: '16px', fontStyle: 'italic', color: '#555', lineHeight: '1.8' }}>
+            "Motivação não substitui gestão, planejamento ou estratégia. Mas pode ajudar pessoas a reencontrarem o propósito necessário para colocar tudo isso em prática."
           </p>
         </div>
-
-        {/* Palestra 1 */}
-        <div className="wf-palestra-item">
-          <div className="wf-palestra-image"></div>
-          <div>
-            <span className="wf-palestra-tag">[Categoria]</span>
-            <h3 className="wf-palestra-title">[Nome da Palestra 1]</h3>
-            <p className="wf-palestra-desc">
-              [Descrição resumida: 3-4 linhas. O que o público vai aprender/vivenciar. Foco em resultado prático.]
-            </p>
-            <ul className="wf-palestra-topics">
-              <li>[Tópico-chave 1 — o que será abordado]</li>
-              <li>[Tópico-chave 2 — o que será abordado]</li>
-              <li>[Tópico-chave 3 — o que será abordado]</li>
-              <li>[Tópico-chave 4 — o que será abordado]</li>
-            </ul>
-            <Link to="/contato" className="wf-btn-secondary" style={{ fontSize: '12px', padding: '10px 20px' }}>
-              Solicitar Esta Palestra
-            </Link>
-          </div>
-        </div>
-
-        {/* Palestra 2 */}
-        <div className="wf-palestra-item">
-          <div className="wf-palestra-image"></div>
-          <div>
-            <span className="wf-palestra-tag">[Categoria]</span>
-            <h3 className="wf-palestra-title">[Nome da Palestra 2]</h3>
-            <p className="wf-palestra-desc">
-              [Descrição resumida: 3-4 linhas. O que o público vai aprender/vivenciar.]
-            </p>
-            <ul className="wf-palestra-topics">
-              <li>[Tópico-chave 1]</li>
-              <li>[Tópico-chave 2]</li>
-              <li>[Tópico-chave 3]</li>
-              <li>[Tópico-chave 4]</li>
-            </ul>
-            <Link to="/contato" className="wf-btn-secondary" style={{ fontSize: '12px', padding: '10px 20px' }}>
-              Solicitar Esta Palestra
-            </Link>
-          </div>
-        </div>
-
-        {/* Palestra 3 */}
-        <div className="wf-palestra-item">
-          <div className="wf-palestra-image"></div>
-          <div>
-            <span className="wf-palestra-tag">[Categoria]</span>
-            <h3 className="wf-palestra-title">[Nome da Palestra 3]</h3>
-            <p className="wf-palestra-desc">
-              [Descrição resumida: 3-4 linhas. O que o público vai aprender/vivenciar.]
-            </p>
-            <ul className="wf-palestra-topics">
-              <li>[Tópico-chave 1]</li>
-              <li>[Tópico-chave 2]</li>
-              <li>[Tópico-chave 3]</li>
-              <li>[Tópico-chave 4]</li>
-            </ul>
-            <Link to="/contato" className="wf-btn-secondary" style={{ fontSize: '12px', padding: '10px 20px' }}>
-              Solicitar Esta Palestra
-            </Link>
-          </div>
-        </div>
-
-        {/* Palestra 4 */}
-        <div className="wf-palestra-item">
-          <div className="wf-palestra-image"></div>
-          <div>
-            <span className="wf-palestra-tag">[Categoria]</span>
-            <h3 className="wf-palestra-title">[Nome da Palestra 4]</h3>
-            <p className="wf-palestra-desc">
-              [Descrição resumida: 3-4 linhas. O que o público vai aprender/vivenciar.]
-            </p>
-            <ul className="wf-palestra-topics">
-              <li>[Tópico-chave 1]</li>
-              <li>[Tópico-chave 2]</li>
-              <li>[Tópico-chave 3]</li>
-              <li>[Tópico-chave 4]</li>
-            </ul>
-            <Link to="/contato" className="wf-btn-secondary" style={{ fontSize: '12px', padding: '10px 20px' }}>
-              Solicitar Esta Palestra
-            </Link>
-          </div>
-        </div>
       </section>
 
-      {/* ============================================
-          PARA QUEM — Público-alvo
-          ============================================ */}
-      <section className="wf-section wf-section-dark">
-        <div className="wf-section-center">
-          <p className="wf-section-label">Para Quem</p>
-          <h2 className="wf-section-title">Ideal para sua empresa se...</h2>
-        </div>
-
-        <div className="wf-grid-2" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div className="wf-card">
-            <h3 className="wf-card-title">[Perfil de empresa/segmento 1]</h3>
-            <p className="wf-card-text">
-              [Texto: 2-3 linhas descrevendo o cenário ideal. Ex: "Empresas que buscam engajar equipes..."]
-            </p>
-          </div>
-          <div className="wf-card">
-            <h3 className="wf-card-title">[Perfil de empresa/segmento 2]</h3>
-            <p className="wf-card-text">
-              [Texto: 2-3 linhas descrevendo o cenário ideal.]
-            </p>
-          </div>
-          <div className="wf-card">
-            <h3 className="wf-card-title">[Perfil de empresa/segmento 3]</h3>
-            <p className="wf-card-text">
-              [Texto: 2-3 linhas descrevendo o cenário ideal.]
-            </p>
-          </div>
-          <div className="wf-card">
-            <h3 className="wf-card-title">[Perfil de empresa/segmento 4]</h3>
-            <p className="wf-card-text">
-              [Texto: 2-3 linhas descrevendo o cenário ideal.]
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================
-          CTA FINAL
-          ============================================ */}
+      {/* CTA FINAL */}
       <section className="wf-cta-section">
-        <h2 className="wf-cta-title">[Título CTA: Pronto para transformar sua equipe?]</h2>
+        <h2 className="wf-cta-title">Convide Fernando para seu evento</h2>
         <p className="wf-cta-text">
-          [Texto curto: reforço + direcionamento para contato.]
+          Uma apresentação que combina: História + emoção + reflexão + interação + atitude. Ideal para eventos que desejam oferecer ao público uma experiência humana, envolvente e inspiradora.
         </p>
         <Link to="/contato" className="wf-btn-primary">Solicitar Proposta</Link>
       </section>

@@ -14,7 +14,7 @@ export default function Header() {
         <Link to="/sobre" className={`wf-nav-link ${isActive('/sobre')}`}>Sobre</Link>
         <Link to="/palestras" className={`wf-nav-link ${isActive('/palestras')}`}>Palestras</Link>
         <Link to="/contato" className={`wf-nav-link ${isActive('/contato')}`}>Contato</Link>
-        <Link to="/contato" className="wf-nav-cta">Solicitar Palestra</Link>
+        <Link to="/contato" className="wf-nav-cta">Solicite Uma Palestra</Link>
       </nav>
     </header>
   );

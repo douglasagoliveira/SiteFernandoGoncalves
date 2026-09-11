@@ -1,29 +1,26 @@
+import { Link } from 'react-router-dom';
+
 export default function Sobre() {
   return (
     <div>
-      {/* ============================================
-          BREADCRUMB
-          ============================================ */}
+      {/* BREADCRUMB */}
       <div className="wf-breadcrumb">
         <a href="#/">Início</a>
         <span>/</span>
         Sobre
       </div>
 
-      {/* ============================================
-          PAGE HEADER
-          ============================================ */}
+      {/* PAGE HEADER */}
       <section className="wf-page-header">
         <p className="wf-section-label">Sobre</p>
-        <h1 className="wf-page-header-title">[Título: Quem é Fernando Gonçalves]</h1>
+        <h1 className="wf-page-header-title">Uma história real. Uma experiência de vida. Uma mensagem que conecta.</h1>
         <p className="wf-page-header-text">
-          [Subtítulo: Uma frase que resume a essência — ex: "Palestrante, escritor e transformador de equipes que já impactou mais de X mil profissionais pelo Brasil."]
+          Fernando Gonçalves é storyteller e palestrante motivacional desde 1992. Sua experiência nasceu muito antes dos palcos — nasceu de uma vida marcada por dificuldades, recomeços e pela necessidade de encontrar caminhos quando aparentemente não havia caminhos.
         </p>
       </section>
 
       {/* ============================================
-          BIOGRAFIA PRINCIPAL — Foto + Texto
-          Objetivo: Construir autoridade e conexão
+          BIOGRAFIA PRINCIPAL
           ============================================ */}
       <section className="wf-section">
         <div className="wf-grid-2" style={{ alignItems: 'start', gap: '64px' }}>
@@ -33,187 +30,217 @@ export default function Sobre() {
             </div>
           </div>
           <div>
-            <p className="wf-section-label">[Label: Minha História]</p>
-            <h2 className="wf-section-title">[Título: Frase de impacto sobre a origem]</h2>
+            <p className="wf-section-label">Minha História</p>
+            <h2 className="wf-section-title">Das dificuldades à decisão de não desistir</h2>
             <p className="wf-section-subtitle" style={{ marginBottom: '24px' }}>
-              [Parágrafo 1: Origem — de onde veio, contexto de vida. Máximo 4 linhas. Foco em elementos que conectam com o público corporativo.]
+              Durante a infância e adolescência, enfrentou situações extremamente adversas: problemas de saúde, extrema pobreza, bullying, violência familiar, dificuldades comportamentais e emocionais relacionadas ao TDAH e experiências traumáticas durante sua formação.
             </p>
             <p className="wf-section-subtitle" style={{ marginBottom: '24px' }}>
-              [Parágrafo 2: O momento de virada — quando decidiu dedicar-se a palestras e desenvolvimento humano. Máximo 4 linhas.]
+              Filho de um homem que enfrentou a condição de andarilho e ex-morador de rua e de uma mulher órfã que passou por experiências de extrema exploração durante a infância, Fernando cresceu conhecendo de perto realidades que poderiam facilmente produzir desesperança.
             </p>
             <p className="wf-section-subtitle" style={{ marginBottom: '24px' }}>
-              [Parágrafo 3: O que entrega hoje — metodologia, abordagem, diferencial. Máximo 4 linhas.]
+              Na adolescência, foi enviado para um internato, onde enfrentou humilhações e diferentes formas de violência. Apesar de tudo isso, decidiu não desistir. Essa decisão tornou-se o ponto de partida de uma trajetória construída com resiliência, perseverança, paciência, otimismo e responsabilidade pelas próprias escolhas.
             </p>
             <p className="wf-section-subtitle">
-              [Parágrafo 4: Fechamento — frase de propósito/missão. 1-2 linhas.]
+              Hoje, Fernando transforma essa experiência em conteúdo, reflexão e inspiração. Mais do que contar uma história, Fernando utiliza sua história para provocar novas histórias.
             </p>
           </div>
         </div>
       </section>
 
       {/* ============================================
-          DIFERENCIAIS — Por que contratar
-          Objetivo: Argumentos de venda
+          TIMELINE — Minha Trajetória
           ============================================ */}
       <section className="wf-section wf-section-dark">
-        <div className="wf-section-center">
-          <p className="wf-section-label">Diferenciais</p>
-          <h2 className="wf-section-title">Por que empresas escolhem Fernando Gonçalves</h2>
-          <p className="wf-section-subtitle">
-            [Texto curto: posicionamento de valor para o decisor corporativo.]
-          </p>
-        </div>
-
-        <div className="wf-grid-4">
-          {/* Diferencial 1 */}
-          <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>
-              ÍCONE
-            </div>
-            <h3 className="wf-card-title">[Diferencial 1]</h3>
-            <p className="wf-card-text">
-              [Texto curto: 2-3 linhas explicando o diferencial.]
-            </p>
-          </div>
-
-          {/* Diferencial 2 */}
-          <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>
-              ÍCONE
-            </div>
-            <h3 className="wf-card-title">[Diferencial 2]</h3>
-            <p className="wf-card-text">
-              [Texto curto: 2-3 linhas explicando o diferencial.]
-            </p>
-          </div>
-
-          {/* Diferencial 3 */}
-          <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>
-              ÍCONE
-            </div>
-            <h3 className="wf-card-title">[Diferencial 3]</h3>
-            <p className="wf-card-text">
-              [Texto curto: 2-3 linhas explicando o diferencial.]
-            </p>
-          </div>
-
-          {/* Diferencial 4 */}
-          <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>
-              ÍCONE
-            </div>
-            <h3 className="wf-card-title">[Diferencial 4]</h3>
-            <p className="wf-card-text">
-              [Texto curto: 2-3 linhas explicando o diferencial.]
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================
-          TIMELINE — Trajetória profissional
-          Objetivo: Mostrar evolução e credibilidade
-          ============================================ */}
-      <section className="wf-section">
         <div style={{ maxWidth: '700px' }}>
           <p className="wf-section-label">Trajetória</p>
-          <h2 className="wf-section-title">Uma jornada de transformação</h2>
-          <p className="wf-section-subtitle">
-            [Texto curto: introdução à timeline.]
-          </p>
+          <h2 className="wf-section-title">De uma infância de dificuldades a uma carreira dedicada a pessoas</h2>
         </div>
 
         <div className="wf-timeline" style={{ maxWidth: '700px' }}>
-          {/* Timeline Item 1 */}
           <div className="wf-timeline-item">
-            <p className="wf-timeline-year">[Período/Ano]</p>
-            <h3 className="wf-timeline-title">[Marco da trajetória]</h3>
+            <p className="wf-timeline-year">Infância</p>
+            <h3 className="wf-timeline-title">Primeiros desafios</h3>
             <p className="wf-timeline-text">
-              [Texto resumido: 2-3 linhas sobre o marco. Foco em resultado ou aprendizado.]
+              Infância marcada por pobreza extrema, problemas de saúde, bullying e violência familiar. Filho de pai ex-morador de rua e mãe órfã explorada na infância.
             </p>
           </div>
 
-          {/* Timeline Item 2 */}
           <div className="wf-timeline-item">
-            <p className="wf-timeline-year">[Período/Ano]</p>
-            <h3 className="wf-timeline-title">[Marco da trajetória]</h3>
+            <p className="wf-timeline-year">Adolescência</p>
+            <h3 className="wf-timeline-title">Internato e superação</h3>
             <p className="wf-timeline-text">
-              [Texto resumido: 2-3 linhas sobre o marco.]
+              Enviado para um internato, enfrentou humilhações e violência. Estudou até a antiga 6ª série. Apesar das adversidades, decidiu não desistir.
             </p>
           </div>
 
-          {/* Timeline Item 3 */}
           <div className="wf-timeline-item">
-            <p className="wf-timeline-year">[Período/Ano]</p>
-            <h3 className="wf-timeline-title">[Marco da trajetória]</h3>
+            <p className="wf-timeline-year">Retomada</p>
+            <h3 className="wf-timeline-title">Volta aos estudos</h3>
             <p className="wf-timeline-text">
-              [Texto resumido: 2-3 linhas sobre o marco.]
+              Anos mais tarde, decidiu retomar os estudos, prestou o ENEM e concluiu o ensino médio. Ingressou em curso superior de Marketing.
             </p>
           </div>
 
-          {/* Timeline Item 4 */}
           <div className="wf-timeline-item">
-            <p className="wf-timeline-year">[Período/Ano]</p>
-            <h3 className="wf-timeline-title">[Marco da trajetória]</h3>
+            <p className="wf-timeline-year">1992</p>
+            <h3 className="wf-timeline-title">Início como palestrante</h3>
             <p className="wf-timeline-text">
-              [Texto resumido: 2-3 linhas sobre o marco.]
+              Em pequenas reuniões e encontros religiosos, começou a desenvolver sua experiência como palestrante. Contou sua própria história a um grupo — a reação foi surpreendente.
             </p>
           </div>
 
-          {/* Timeline Item 5 */}
           <div className="wf-timeline-item">
-            <p className="wf-timeline-year">[Período/Ano]</p>
-            <h3 className="wf-timeline-title">[Marco da trajetória]</h3>
+            <p className="wf-timeline-year">Década de 1990</p>
+            <h3 className="wf-timeline-title">Experiência corporativa</h3>
             <p className="wf-timeline-text">
-              [Texto resumido: 2-3 linhas sobre o marco.]
+              Atuou como coordenador de treinamento motivacional de uma das maiores empresas de assistência médica do Brasil, desenvolvendo atividades em Belo Horizonte e diversas cidades de Minas Gerais.
+            </p>
+          </div>
+
+          <div className="wf-timeline-item">
+            <p className="wf-timeline-year">Hoje</p>
+            <h3 className="wf-timeline-title">+30 anos transformando vidas</h3>
+            <p className="wf-timeline-text">
+              Mais de três décadas dedicadas à comunicação, ao desenvolvimento humano e à motivação. Autor de 3 livros. Palestrante para empresas, instituições e grupos em todo o Brasil.
             </p>
           </div>
         </div>
       </section>
 
       {/* ============================================
-          CONQUISTAS / CREDENCIAIS
+          DIFERENCIAIS
           ============================================ */}
-      <section className="wf-section wf-section-dark">
+      <section className="wf-section">
         <div className="wf-section-center">
-          <p className="wf-section-label">Credenciais</p>
-          <h2 className="wf-section-title">Reconhecimento e conquistas</h2>
+          <p className="wf-section-label">Diferenciais</p>
+          <h2 className="wf-section-title">Por que contratar Fernando Gonçalves?</h2>
         </div>
 
         <div className="wf-grid-3">
-          {/* Conquista 1 */}
           <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-image" style={{ height: '120px' }}></div>
-            <h3 className="wf-card-title">[Título da Conquista]</h3>
-            <p className="wf-card-text">[Descrição breve: 1-2 linhas.]</p>
+            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>★</div>
+            <h3 className="wf-card-title">Uma história verdadeira</h3>
+            <p className="wf-card-text">
+              A principal ferramenta de Fernando é sua própria experiência de vida.
+            </p>
           </div>
 
-          {/* Conquista 2 */}
           <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-image" style={{ height: '120px' }}></div>
-            <h3 className="wf-card-title">[Título da Conquista]</h3>
-            <p className="wf-card-text">[Descrição breve: 1-2 linhas.]</p>
+            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>★</div>
+            <h3 className="wf-card-title">+30 anos de atuação</h3>
+            <p className="wf-card-text">
+              Experiência como palestrante desde 1992, com atuação junto a empresas e equipes de diferentes segmentos.
+            </p>
           </div>
 
-          {/* Conquista 3 */}
           <div className="wf-card" style={{ textAlign: 'center' }}>
-            <div className="wf-card-image" style={{ height: '120px' }}></div>
-            <h3 className="wf-card-title">[Título da Conquista]</h3>
-            <p className="wf-card-text">[Descrição breve: 1-2 linhas.]</p>
+            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>★</div>
+            <h3 className="wf-card-title">Vivência dos dois lados</h3>
+            <p className="wf-card-text">
+              Experiência tanto como colaborador quanto como gestor. Conhecer os dois lados da relação profissional faz diferença.
+            </p>
+          </div>
+
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>★</div>
+            <h3 className="wf-card-title">Identificação com o público</h3>
+            <p className="wf-card-text">
+              A abordagem parte da realidade de uma pessoa comum enfrentando desafios reais.
+            </p>
+          </div>
+
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>★</div>
+            <h3 className="wf-card-title">Interatividade</h3>
+            <p className="wf-card-text">
+              Dinâmicas, participação do público, brincadeiras, sorteios de brindes e atividades práticas.
+            </p>
+          </div>
+
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <div className="wf-card-icon" style={{ margin: '0 auto 20px' }}>★</div>
+            <h3 className="wf-card-title">Foco em atitude</h3>
+            <p className="wf-card-text">
+              A palestra não termina na inspiração. O participante é estimulado a definir atitudes concretas para começar a mudança.
+            </p>
           </div>
         </div>
       </section>
 
       {/* ============================================
-          CTA — Direcionar para contato
+          EXPERIÊNCIA PROFISSIONAL
           ============================================ */}
+      <section className="wf-section wf-section-dark">
+        <div className="wf-section-center">
+          <p className="wf-section-label">Experiência</p>
+          <h2 className="wf-section-title">Décadas de experiência falando com pessoas e equipes</h2>
+        </div>
+
+        <div className="wf-grid-2" style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Palestras motivacionais</h3>
+            <p className="wf-card-text">Para empresas, indústria, comércio e serviços.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Treinamentos para equipes</h3>
+            <p className="wf-card-text">Equipes de vendas, colaboradores, gestores, equipes administrativas e operacionais.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Eventos corporativos</h3>
+            <p className="wf-card-text">Congressos, convenções, encontros empresariais e eventos motivacionais.</p>
+          </div>
+          <div className="wf-card">
+            <h3 className="wf-card-title">Terceiro setor e instituições</h3>
+            <p className="wf-card-text">ONGs, associações, projetos sociais, instituições religiosas e grupos familiares.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          HABILIDADES E CONHECIMENTOS
+          ============================================ */}
+      <section className="wf-section">
+        <div className="wf-section-center">
+          <p className="wf-section-label">Conhecimentos</p>
+          <h2 className="wf-section-title">Áreas de atuação e estudo</h2>
+        </div>
+
+        <div className="wf-grid-4">
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Relações Humanas</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Comunicação Interpessoal</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Gerenciamento de Equipes</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Oratória</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Liderança Organizacional</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Análise Comportamental</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Comunicação Eleitoral</h3>
+          </div>
+          <div className="wf-card" style={{ textAlign: 'center' }}>
+            <h3 className="wf-card-title">Design e Produção de Mídias</h3>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="wf-cta-section">
-        <h2 className="wf-cta-title">[Título CTA: Convite para contratar uma palestra]</h2>
+        <h2 className="wf-cta-title">Conheça as palestras de Fernando Gonçalves</h2>
         <p className="wf-cta-text">
-          [Texto curto: reforço de valor + urgência.]
+          Uma apresentação que combina história + emoção + reflexão + interação + atitude.
         </p>
-        <a href="#/contato" className="wf-btn-primary">Fale Conosco</a>
+        <Link to="/palestras" className="wf-btn-primary">Ver Palestras</Link>
       </section>
     </div>
   );
