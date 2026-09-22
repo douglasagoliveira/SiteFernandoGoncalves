@@ -59,7 +59,6 @@ export default function Home() {
         label="Depoimentos"
         title="Quem vive a experiência pode contar melhor"
         subtitle="Veja o que gestores e participantes dizem sobre as palestras."
-        note="* Depoimentos serão substituídos por versões reais e autorizadas."
       />
 
       {/* BOOKS */}

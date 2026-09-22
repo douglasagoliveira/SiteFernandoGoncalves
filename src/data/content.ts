@@ -171,22 +171,67 @@ export const formats: Format[] = [
 
 // ============================================
 // DEPOIMENTOS (DOBRA 8)
-// ============================================
+/// ============================================
 export const testimonials: Testimonial[] = [
   {
-    quote: 'A experiência foi muito além de uma palestra motivacional. Fernando conseguiu fazer nossa equipe refletir sobre atitudes que podemos mudar no dia a dia.',
-    name: '[Nome]',
-    role: '[Cargo — Empresa — Cidade]',
+    quote: 'Nossa equipe ficou motivada e proativa após participar da palestra do Fernando. A forma como ele interage com os colaboradores atua como um propulsor profissional e pessoal. Melhoramos nossa produtividade, atendimento e relacionamento entre os colaboradores.',
+    name: 'Isac Vieira',
+    role: 'Diretor da CME Eventos',
   },
   {
-    quote: 'Uma história de vida que gera identificação e mostra que é possível recomeçar, mesmo diante de grandes dificuldades.',
-    name: '[Nome]',
-    role: '[Cargo — Instituição — Cidade]',
+    quote: 'Tive o prazer de conhecer Fernando Gonçalves em 2018, na campanha eleitoral. Suas palestras são excepcionais, com um método diferenciado que cativa o público, fazendo-o refletir sobre mudanças simples que podem surtir grandes resultados. Estive pessoalmente em três de suas palestras, todas voltadas à conscientização e crescimento profissional. Além de ser uma pessoa super carismática, Fernando tem uma técnica diferenciada de abordar seus conteúdos.',
+    name: 'Eugênio Pinto',
+    role: 'Ex-Prefeito de Itaúna — MG',
   },
   {
-    quote: 'A participação da equipe foi muito positiva. A dinâmica fez com que todos se envolvessem e refletissem sobre seu papel dentro da empresa.',
-    name: '[Nome]',
-    role: '[Cargo — Empresa — Cidade]',
+    quote: 'Uma palestra leve, mas profunda, que levanta a equipe. Nossa experiência com o palestrante foi surpreendente. A abordagem do Fernando foi de uma precisão cirúrgica, ao relatar suas adversidades profissionais e pessoais. Houve comoção, conscientização, reflexão e, como não poderia ser diferente, ótimos resultados. Nossos colaboradores se tornaram mais conscientes, responsáveis, pontuais, motivados e produtivos.',
+    name: 'Fabiana Guimarães',
+    role: 'Proprietária da Pérolas Recreações Infantis',
+  },
+  {
+    quote: 'Fernando tem sua expertise fundamentada em experiências diversas ao longo de sua ampla trajetória no ramo político. Recebo consultoria no mandato e suporte para minha equipe através de suas palestras e dicas fundamentais. Recomendo seu excelente trabalho.',
+    name: 'Lair Lopes',
+    role: 'Vereador de Itatiaiuçu – MG',
+  },
+  {
+    quote: 'Fernando Gonçalves é um comunicador nato. Persuasivo e influente, faz de suas palestras uma verdadeira sessão de conexão entre as pessoas. Numa dinâmica envolvente e introspectiva, leva os participantes a refletir sobre suas posturas e como ser melhores a cada dia. Após sua palestra o ambiente fica leve e os colaboradores se relacionam mais conscientemente com os colegas e superiores.',
+    name: 'José Adelmo de Matos',
+    role: 'Diretor Executivo da CotaPet',
+  },
+  {
+    quote: 'Conheço o Fernando há três anos e seu trabalho tem feito a diferença em nossa empresa. Sempre que vem à fábrica, oferece algo novo, inspirador e motivador. A interação com nossos colaboradores é muito positiva. Temos colhido grandes resultados com seus conteúdos.',
+    name: 'Vinícius Chaves',
+    role: 'Diretor da Indústria de Pastéis Vineli — Mateus Leme/MG',
+  },
+  {
+    quote: 'O trabalho que Fernando Gonçalves desenvolve para o Sindicato tem surtido grande efeito. Nossos associados recebem informação de alto nível numa linguagem simples como lhe é peculiar. Suas dicas e orientações têm ajudado não apenas os associados, como também nossos colaboradores e as famílias das zonas rurais.',
+    name: 'Mário Sotero Borges',
+    role: 'Presidente do Sindicato dos Trabalhadores Rurais — MG',
+  },
+  {
+    quote: 'Acompanho a trajetória de Fernando Gonçalves há mais de 20 anos. Um exímio palestrante que desenvolveu seu próprio método de explanar, interagir e cativar o público. Nenhuma de suas ministrações é igual à outra. Cada uma é única. Ao contextualizar sua explanação, Fernando abre o coração e aplica estratégias que conscientizam e motivam a equipe, que corresponde com grandes resultados.',
+    name: 'Dea Lúcia Maia Teixeira',
+    role: 'Diretora da G7 Consultoria',
+  },
+  {
+    quote: 'Os resultados do trabalho desenvolvido por Fernando junto à nossa ONG têm sido extremamente positivos e, em muitos aspectos, surpreendentes. Destacamos, especialmente, sua atenção, dedicação e a maneira criativa e comprometida com que conduz cada atendimento. Sua atuação agrega valor às nossas iniciativas e fortalece o propósito de nosso trabalho.',
+    name: 'Vanilda Gomes da Silveira Braga',
+    role: 'Presidente da ASPRAN',
+  },
+  {
+    quote: 'Conhecer o Projeto SIMPLEX e participar das palestras conduzidas por Fernando Gonçalves representou um importante diferencial para o desenvolvimento e a motivação de nossa equipe. Com uma abordagem inovadora, dinâmica e diferenciada, o trabalho proporcionou uma nova perspectiva sobre empatia, colaboração, cooperação, resiliência e valorização profissional.',
+    name: 'Paulo Matos',
+    role: 'CEO da Imperium Global Group',
+  },
+  {
+    quote: 'A metodologia utilizada por Fernando Gonçalves, através do método SIMPLEX, contribui para que os colaboradores ampliem a percepção sobre seu próprio valor, suas competências e a importância de sua contribuição para os resultados coletivos. Profissionais que reconhecem seu potencial tendem a apresentar maior engajamento, proatividade, comprometimento e produtividade.',
+    name: 'Renato G. Ferreira',
+    role: 'Professor da ENT Pampulha – BH',
+  },
+  {
+    quote: 'Recomendamos o Projeto SIMPLEX e as palestras de Fernando Gonçalves com grande satisfação, especialmente às organizações que buscam fortalecer suas equipes, promover uma cultura de valorização das pessoas e estimular melhores resultados por meio do desenvolvimento humano e profissional.',
+    name: 'Daniella Cardoso',
+    role: 'CEO Vivara Corretora de Seguros',
   },
 ];
 
