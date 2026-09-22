@@ -46,3 +46,7 @@ node_modules/
 .next/
 dist/
 build/
+
+# Arquivos locais de apoio (nao versionar)
+.agents/
+Referencias/
