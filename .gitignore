@@ -50,3 +50,6 @@ build/
 # Arquivos locais de apoio (nao versionar)
 .agents/
 Referencias/
+
+.vercel
+.env*
